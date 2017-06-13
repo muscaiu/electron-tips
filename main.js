@@ -6,3 +6,8 @@ app.on('ready', () => {
     win.loadURL(`file://${__dirname}/src/index.html`)
     win.webContents.openDevTools()
 })
+
+exports.openWindow = () => {
+    let win = new BrowserWindow({ width: 400, height: 200 })
+    win.loadURL(`file://${__dirname}/src/bear.html`)
+}
